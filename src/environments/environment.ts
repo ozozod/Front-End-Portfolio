@@ -6,7 +6,7 @@ export const environment = {
 
   production: false,
   //URL: 'http://localhost:8080/'
-  URL: 'https://backenddj.onrender.com/'
+  URL: 'https://back-end-dj.onrender.com/'
 };
 
 /*
