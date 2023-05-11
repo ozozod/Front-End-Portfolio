@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #00619d; border: 1px solid #00619d;">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="../../../assets/APLogo.png" id="logoAP">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <div id="botones">
+          <li class="nav-item">
+            <button type="button" class="btn btn-outline-primary">Inicio</button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-outline-primary">Acerca</button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-outline-primary">Servicios</button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-outline-primary">Contacto</button>
+          </li>
+        </div>
+          <li class="nav-item">
+            <a href="" class="nav-link"><i class="bi bi-linkedin" id="redes"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link"><i class="bi bi-twitter" id="redes"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link"><i class="bi bi-instagram" id="redes"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link"><i class="bi bi-github" id="redes"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link"><i class="bi bi-facebook" id="redes"></i></a>
+          </li>
+          <li class="nav-item" *ngIf="!isLogged">
+            <button type="button" class="btn btn-outline-primary" (click)="login()">Ingreso</button>
+          </li>
+          <li class="nav-item" *ngIf="isLogged">
+            <button type="button" class="btn btn-outline-primary" (click)="onLogOut()">Cerrar Sesión</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  

@@ -1,0 +1,79 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00619d;
+  height: 100px; /* Ajusta la altura según tus necesidades */
+}
+
+.redes {
+  margin-right: 0.5em;
+}
+
+#logoAP {
+  width: 150px;
+  transition: transform 0.3s ease-in-out;
+}
+
+img {
+  width: 40px;
+}
+
+.btn {
+  border-width: medium;
+  background-color: #00619d;
+  color: #fff;
+}
+
+#navboton {
+  color: white;
+  font-weight: bold;
+}
+
+nav {
+  background-color: #00619d;
+}
+
+/* Estilos para el menú hamburguesa */
+.navbar-toggler {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  background-color: #00619D;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  transform: rotate(90deg);
+}
+
+/* Estilos para el menú hamburguesa abierto */
+.navbar-collapse.show #logoAP {
+  transform: translateX(-40%);
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00619D
+}
+
+.bi:before  {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+#botones{
+  display: flex;
+  justify-content: flex-start;
+}
