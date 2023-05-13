@@ -1,4 +1,45 @@
-<div class="row">
+<div class="row" id="skillb">
+
+    <h1>Hard & Soft skills</h1>
+    <div class="col-sm-12 col-md-12 col-lg-12">
+        <button type="button" routerLink="/newskill" class="btn btn-dark" *ngIf="isLogged">Nueva Skill</button>
+    </div>
+
+    <div class="text-center col-sm-12 col-md-12 col-lg-12" *ngFor="let skill of skill">
+
+
+        <div class="container-fluid">
+            <div class="row">
+              <div class=" txt-custom col-2 text-left">
+                <p>{{skill.nombre}}  {{skill.porcentaje}}%</p>
+              </div>
+              <div class="col-9 barrawe">
+                <div class="progress" id="progressBar">
+                  <div class="progress-bar progress-bar-striped bg-custom progress-bar-animated" role="progressbar" aria-label="Example 1px high" id="progressBarPorcentaje"  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" [style.width]="skill.porcentaje + '%'">.</div>
+                </div>
+                <h6></h6>
+              </div>
+              <div class="col-1 text-right">
+                <td *ngIf="isLogged">
+                  <button class="btn btn-success" routerLink="/editskill/{{skill.id}}" style="background-color: #00bf55;">
+                    <i class="bi bi-pencil-fill"></i>
+                  </button>
+                </td>
+                <td *ngIf="isLogged">
+                  <button class="btn btn-danger" (click)="delete(skill.id)">
+                    <i class="bi bi-trash-fill"></i>
+                  </button>
+                </td>
+              </div>
+            </div>
+          </div>
+          
+</div>
+
+
+
+
+<!-- <div class="row">
 
     <h1>Hard & Soft skills</h1>
     <div class="col-sm-12 col-md-12 col-lg-12">
@@ -13,9 +54,8 @@
         [titleColor]="'#FFFFFF'" 
         [showImage]="false" 
         [imageHeight]="70" 
-        [imageWidth]="70" 
-        [showUnits]="false"
-        [showSubtitle]="false" 
+        [imageWidth]="70"
+        [subtitle]="" 
         [space]="-10" 
         [outerStrokeGradient]="true" 
         [outerStrokeWidth]="10"
@@ -23,7 +63,9 @@
         [outerStrokeGradientStopColor]="'#00bf55'" 
         [innerStrokeColor]="'#e7e8ea'"
         [innerStrokeWidth]="10" 
-        [animationDuration]="800">
+        [animationDuration]="800"
+        >
+        
     </circle-progress>
 
         <div>
@@ -38,4 +80,4 @@
         </div>
         
     </div>
-</div>
+</div> -->

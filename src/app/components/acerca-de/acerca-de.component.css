@@ -22,6 +22,11 @@ div{
         left: 2%;
         
     }
+    .descripcion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media (max-width: 575px){
@@ -31,5 +36,10 @@ div{
         box-shadow: 3px 3px 3px grey;
         left: 2%;
         top: 950px;
+    }
+    .descripcion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

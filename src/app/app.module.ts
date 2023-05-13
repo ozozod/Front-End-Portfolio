@@ -30,6 +30,7 @@ import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de.com
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,7 +51,7 @@ import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de.com
     NeweducacionComponent,
     NewSkillComponent,
     EditSkillComponent,
-    EditAcercaDeComponent
+    EditAcercaDeComponent,
     
   ],
   imports: [
