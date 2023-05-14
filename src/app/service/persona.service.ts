@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { persona } from '../model/persona.model';
-import { environment } from 'src/environments/environment.prod';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -34,8 +34,8 @@ public update(id: number, Persona: persona): Observable<any>{
   return this.httpClient.put<any>(this.URL + `update/${id}`, Persona);
 }
 
-public delete(id: number): Observable<any>{
+/*public delete(id: number): Observable<any>{
   return this.httpClient.delete<any>(this.URL + `delete/${id}`);
-}
+}*/
 
 }

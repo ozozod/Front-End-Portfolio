@@ -1,8 +1,9 @@
-<div class="row" id="skillb">
+
+<div class="row">
 
     <h1>Hard & Soft skills</h1>
     <div class="col-sm-12 col-md-12 col-lg-12">
-        <button type="button" routerLink="/newskill" class="btn btn-dark" *ngIf="isLogged">Nueva Skill</button>
+        <button type="button" routerLink="/newskill" class="btn btn-success" *ngIf="isLogged" style="background-color: #00BF55;">Nueva Skill</button>
     </div>
 
     <div class="text-center col-sm-12 col-md-12 col-lg-12" *ngFor="let skill of skill">
@@ -35,49 +36,3 @@
           </div>
           
 </div>
-
-
-
-
-<!-- <div class="row">
-
-    <h1>Hard & Soft skills</h1>
-    <div class="col-sm-12 col-md-12 col-lg-12">
-        <button type="button" routerLink="/newskill" class="btn btn-dark" *ngIf="isLogged">Nueva Skill</button>
-    </div>
-
-    <div class="text-center col-sm-4 col-md-4 col-lg-4" *ngFor="let skill of skill">
-        <circle-progress 
-        [percent]="(skill.porcentaje)" 
-        [radius]="100"  [imageSrc]="''"
-        [title]="(skill.nombre)" 
-        [titleColor]="'#FFFFFF'" 
-        [showImage]="false" 
-        [imageHeight]="70" 
-        [imageWidth]="70"
-        [subtitle]="" 
-        [space]="-10" 
-        [outerStrokeGradient]="true" 
-        [outerStrokeWidth]="10"
-        [outerStrokeColor]="'#82fd6c'" 
-        [outerStrokeGradientStopColor]="'#00bf55'" 
-        [innerStrokeColor]="'#e7e8ea'"
-        [innerStrokeWidth]="10" 
-        [animationDuration]="800"
-        >
-        
-    </circle-progress>
-
-        <div>
-            <td *ngIf="isLogged">
-                <button class="btn btn-light" routerLink="/editskill/{{skill.id}}">
-                    <i class="bi bi-pencil-fill"></i></button>
-            </td>
-            <td *ngIf="isLogged">
-                <button class="btn btn-danger" (click)="delete(skill.id)">
-                    <i class="bi bi-trash-fill"></i></button>
-            </td>
-        </div>
-        
-    </div>
-</div> -->

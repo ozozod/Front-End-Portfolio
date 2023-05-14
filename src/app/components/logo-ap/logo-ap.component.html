@@ -12,19 +12,19 @@
             <a href="https://www.linkedin.com/in/darianjatib/" class="nav-link" target="_blank"><i class="bi bi-linkedin" id="redes"></i></a>
           </li>
           <li class="nav-item">
-            <a href="https://www.instagram.com/darian_ozo/" class="nav-link" target="_blank"><i class="bi bi-instagram" id="redes"></i></a>
-          </li>
-          <li class="nav-item">
             <a href="https://github.com/ozozod" class="nav-link" target="_blank"><i class="bi bi-github" id="redes"></i></a>
           </li>
           <li class="nav-item">
-            <a href="https://www.facebook.com/ozozo8/" class="nav-link" target="_blank"><i class="bi bi-facebook" id="redes"></i></a>
+            <a href="https://www.instagram.com/darian_ozo/" class="nav-link" target="_blank"><i class="bi bi-instagram" id="redes"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.facebook.com/ozozo8/" class="nav-link" target="_blank"><i class="bi bi-facebook" id="redes" ></i></a>
           </li>
           <li class="nav-item" *ngIf="!isLogged">
-            <button type="button" class="btn btn-outline-primary" (click)="login()">Ingreso</button>
+            <button type="button" class="btn btn-outline-light" (click)="login()">Ingreso</button>
           </li>
           <li class="nav-item" *ngIf="isLogged">
-            <button type="button" class="btn btn-outline-primary" (click)="onLogOut()">Cerrar Sesión</button>
+            <button type="button" class="btn btn-outline-light" (click)="onLogOut()">Cerrar Sesión</button>
           </li>
         </ul>
       </div>

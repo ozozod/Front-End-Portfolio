@@ -1,22 +1,20 @@
-<div class="row" id="acercade">
 
-    <div class="w-100">
-        <button type="button" class="btn btn-dark btn-block" routerLink="/editacercade/1" *ngIf="isLogged">
-          Editar persona
-        </button>
-      </div>
-      
-
+<div>
+<button type="button" class="btn btn-success" routerLink="/editacercade/1" *ngIf="isLogged" style="background-color: #00BF55;">
+    Editar persona
+</button>
+</div>
 
 <div class="row">
+
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
         <img src={{persona.img}} id="fotoDePerfil" class="img-fluid">
     </div>
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <p id="nombre">{{persona.nombre}} {{persona.apellido}}</p>
-        <p>Full Stack Developer Jr</p>
+        <p id="nombre">{{persona.nombre}}</p>
+        <p>{{persona.apellido}}</p>
     </div>
-    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 descripcion">
+    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
         <span>
             <h1>Acerca de mí</h1>
             <p>{{persona.descripcion}}</p>

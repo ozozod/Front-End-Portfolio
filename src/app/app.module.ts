@@ -25,6 +25,10 @@ import { NeweducacionComponent } from './components/educacion/neweducacion.compo
 import { NewSkillComponent } from './components/hys/new-skill.component';
 import { EditSkillComponent } from './components/hys/edit-skill.component';
 import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de.component';
+import { AngularFireStorage } from '@angular/fire/compat/storage';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 
 
 
@@ -51,7 +55,7 @@ import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de.com
     NeweducacionComponent,
     NewSkillComponent,
     EditSkillComponent,
-    EditAcercaDeComponent,
+    EditAcercaDeComponent
     
   ],
   imports: [
@@ -61,10 +65,14 @@ import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de.com
     HttpClientModule,
     BrowserAnimationsModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage())
+    
   ],
   providers: [
-    interceptorProvider
+    interceptorProvider,
+    AngularFireStorage
   ],
   bootstrap: [AppComponent]
 })
